@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Los 10 Museos Más Destacados del Mundo</title>
+  <link rel="stylesheet" href="CSS\styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Los 10 Museos</div>
+    <nav aria-label="Menú principal" class="main-nav">
+      <a href="#inicio">Inicio</a>
+      <a href="#museos">Los 10 Museos</a>
+      <a href="#temas">Explora por tema</a>
+      <a href="#planifica">Planifica</a>
+      <a href="#blog">Blog</a>
+      <a href="#acerca">Acerca</a>
+    </nav>
+    <button id="btn-toggle-nav" class="nav-toggle" aria-label="Mostrar menú">☰</button>
+  </header>
+
+  <main>
+        <section id="inicio" class="carousel-container">
+      <div class="carousel" id="carousel">
+        <div class="slide active">
+          <img src="Imagenes\museol.png" alt="Museo del Louvre">
+          <div class="caption">
+            <h2>Museo del Louvre</h2>
+            <p>París, Francia — Hogar de la Mona Lisa y miles de obras maestras.</p>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="Imagenes\museom.png" alt="The Met">
+          <div class="caption">
+            <h2>Museo Metropolitano (The Met)</h2>
+            <p>Nueva York, EE. UU. — Colecciones que abarcan 5.000 años de arte.</p>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="Imagenes\museob.png" alt="Museo Británico">
+          <div class="caption">
+            <h2>Museo Británico</h2>
+            <p>Londres, Reino Unido — Ocho millones de obras de la historia humana.</p>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="Imagenes\museov.png" alt="Museos Vaticanos">
+          <div class="caption">
+            <h2>Museos Vaticanos</h2>
+            <p>Ciudad del Vaticano — La Capilla Sixtina y arte religioso incomparable.</p>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="Imagenes\museop.png" alt="Museo del Prado">
+          <div class="caption">
+            <h2>Museo del Prado</h2>
+            <p>Madrid, España — Velázquez, Goya y el corazón de la pintura europea.</p>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="Imagenes\museoh.png" alt="Museo del Hermitage">
+          <div class="caption">
+            <h2>Museo del Hermitage</h2>
+            <p>San Petersburgo, Rusia — Tres millones de obras en el Palacio de Invierno.</p>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="Imagenes\museomoma.png" alt="MoMA">
+          <div class="caption">
+            <h2>MoMA</h2>
+            <p>Nueva York — Arte moderno y contemporáneo de referencia.</p>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="Imagenes\museog.png" alt="Galeria Nacional">
+          <div class="caption">
+            <h2>Galeria Nacional</h2>
+            <p>Londres, Reino Unido — 2.300 pinturas desde el siglo XIII hasta 1900.</p>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="Imagenes\museoa.png" alt="Museo Nacional de Antropología">
+          <div class="caption">
+            <h2>Museo Nacional de Antropología</h2>
+            <p>CDMX, México — Patrimonio arqueológico y etnográfico de Mesoamérica.</p>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="Imagenes\museoo.png" alt="Musée d'Orsay">
+          <div class="caption">
+            <h2>Musée d'Orsay</h2>
+            <p>París — Centro del impresionismo y post-impresionismo.</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="prev" id="prev" aria-label="Anterior">&#10094;</button>
+      <button class="next" id="next" aria-label="Siguiente">&#10095;</button>
+      <div class="dots" id="dots"></div>
+    </section>
+
+    <section id="museos" class="section">
+      <h2>Los 10 Museos</h2>
+      <p class="small">Haz clic en cualquier museo para ver su información detallada.</p>
+      <div class="card-grid">
+        <div class="card"><h3><a href="index\louvre.html">Museo del Louvre</a></h3><p>París, Francia</p><p>Hogar de la Mona Lisa y miles de obras maestras de arte antiguo y renacentista.</p></div>
+        <div class="card"><h3><a href="index\Met.html">Museo Metropolitano de Arte (The Met)</a></h3><p>Nueva York, EE. UU.</p><p>Colecciones que abarcan más de 5.000 años de historia y arte mundial.</p></div>
+        <div class="card"><h3><a href="index\britanico.html">British Museum</a></h3><p>Londres, Reino Unido</p><p>Famoso por sus colecciones de antigüedades y culturas de todo el mundo.</p></div>
+        <div class="card"><h3><a href="index\vaticanos.html">Museos Vaticanos</a></h3><p>Ciudad del Vaticano</p><p>Recogen arte religioso y obras maestras de la historia del arte europeo.</p></div>
+        <div class="card"><h3><a href="index\prado.html">Museo del Prado</a></h3><p>Madrid, España</p><p>Centro de la pintura europea con obras de Velázquez, Goya y El Greco.</p></div>
+        <div class="card"><h3><a href="index\hermitage.html">Museo del Hermitage</a></h3><p>San Petersburgo, Rusia</p><p>Uno de los museos más grandes del mundo con arte europeo y oriental.</p></div>
+        <div class="card"><h3><a href="index\moma.html">MoMA</a></h3><p>Nueva York, EE. UU.</p><p>Referente en arte moderno y contemporáneo, con colecciones icónicas.</p></div>
+        <div class="card"><h3><a href="index\galeria.html">National Gallery (Londres)</a></h3><p>Londres, Reino Unido</p><p>Destaca por su colección de pintura europea del siglo XIII al XIX.</p></div>
+        <div class="card"><h3><a href="index\nacional.html">Museo Nacional de Antropología</a></h3><p>CDMX, México</p><p>Colecciones de culturas prehispánicas y arqueología mexicana.</p></div>
+        <div class="card"><h3><a href="index\orsay.html">Musée d'Orsay</a></h3><p>París, Francia</p><p>Famoso por su arte impresionista y postimpresionista del siglo XIX y XX.</p></div>
+      </div>
+    </section>
+
+    <section id="temas" class="section">
+      <h2>Explora por Tema</h2>
+
+      <div class="filters">
+        <button data-filter="all" class="filter-btn active">Todos</button>
+        <button data-filter="clasico" class="filter-btn">Arte Clásico</button>
+        <button data-filter="impresionismo" class="filter-btn">Impresionismo</button>
+        <button data-filter="moderno" class="filter-btn">Arte Moderno</button>
+        <button data-filter="pintura" class="filter-btn">Pintura Europea</button>
+        <button data-filter="arqueologia" class="filter-btn">Arqueología</button>
+      </div>
+
+      <div class="card-grid" id="tema-grid">
+        <div class="card" data-tags="clasico,pintura"><h3>Arte Clásico y Antigüedad</h3><p>Piezas destacadas en Louvre, British Museum, Museos Vaticanos.</p></div>
+        <div class="card" data-tags="impresionismo"><h3>Impresionismo y Post-impresionismo</h3><p>Orsay, MoMA (colecciones y préstamos).</p></div>
+        <div class="card" data-tags="moderno"><h3>Arte Moderno y Contemporáneo</h3><p>MoMA, Tate (representado en galerías).</p></div>
+        <div class="card" data-tags="pintura"><h3>Pintura Europea (S. XVI–XIX)</h3><p>Prado, Hermitage, National Gallery.</p></div>
+        <div class="card" data-tags="arqueologia"><h3>Arqueología y Etnografía</h3><p>Museo Nacional de Antropología, British Museum.</p></div>
+      </div>
+    </section>
+
+        <section id="planifica" class="section">
+      <h2>Planifica tu Visita</h2>
+
+      <article>
+        <h3>Consejos de Viaje</h3>
+        <ul>
+          <li><strong>Transporte:</strong> Utiliza metro y transporte público.</li>
+          <li><strong>Alojamiento cerca:</strong>En la mayoria de museos ahi un hotel cerca.</li>
+          <li><strong>Moneda:</strong>Museo del Louvre: Euro (€ / EUR)
+              Museo del Hermitage: Rublo Ruso (₽ / RUB)
+              Museo Metropolitano de Arte (The Met): Dólar Estadounidense ($ / USD)
+              Museo Británico: Libra Esterlina (£ / GBP)
+              Museos Vaticanos: Euro (€ / EUR)
+              Museo del Prado: Euro (€ / EUR)
+              Museo de Arte Moderno (MoMA): Dólar Estadounidense ($ / USD)
+              Galería Nacional de Londres: Libra Esterlina (£ / GBP)
+              Museo Nacional de Antropología: Peso Mexicano ($ / MXN)
+              Museo de Orsay: Euro (€ / EUR)</li>
+        </ul>
+
+        <h3>Entradas y Pases</h3>
+        <div class="card-grid">
+
+  <div class="card">
+    <h3>Museo del Louvre (París, Francia)</h3>
+    <p><strong>Entrada General:</strong> €22,00<br>
+    <strong>Nota:</strong> Gratuito para menores de 18 años y menores de 26 residentes del EEE.</p>
+  </div>
+
+  <div class="card">
+    <h3>Museo del Hermitage (San Petersburgo, Rusia)</h3>
+    <p><strong>Entrada General:</strong> 500 ₽<br>
+    <strong>Nota:</strong> Los precios pueden variar según secciones o exposiciones especiales.</p>
+  </div>
+
+  <div class="card">
+    <h3>Museo Metropolitano de Arte (The Met) (Nueva York, EE. UU.)</h3>
+    <p><strong>Entrada General:</strong> $30 USD<br>
+    <strong>Nota:</strong> “Paga lo que desees” para residentes de Nueva York y estudiantes. Menores de 12 años entran gratis.</p>
+  </div>
+
+  <div class="card">
+    <h3>Museo Británico (Londres, Reino Unido)</h3>
+    <p><strong>Entrada General:</strong> Gratuita<br>
+    <strong>Nota:</strong> La colección permanente es gratuita; exposiciones especiales con costo adicional.</p>
+  </div>
+
+  <div class="card">
+    <h3>Museos Vaticanos (Ciudad del Vaticano)</h3>
+    <p><strong>Entrada General:</strong> €20,00 (sin reserva)<br>
+    <strong>Nota:</strong> Tarifa adicional de €5,00 por reserva online.</p>
+  </div>
+
+  <div class="card">
+    <h3>Museo del Prado (Madrid, España)</h3>
+    <p><strong>Entrada General:</strong> €15,00<br>
+    <strong>Nota:</strong> Entrada gratuita de 18:00 a 20:00 h.</p>
+  </div>
+
+  <div class="card">
+    <h3>Museo de Arte Moderno (MoMA) (Nueva York, EE. UU.)</h3>
+    <p><strong>Entrada General:</strong> $30 USD<br>
+    <strong>Nota:</strong> Menores de 16 años entran gratis. Incluido en pases turísticos como el New York Pass.</p>
+  </div>
+
+  <div class="card">
+    <h3>Galería Nacional de Londres (Londres, Reino Unido)</h3>
+    <p><strong>Entrada General:</strong> Gratuita<br>
+    <strong>Nota:</strong> La colección principal es gratuita. Exposiciones temporales pueden tener costo.</p>
+  </div>
+
+  <div class="card">
+    <h3>Museo Nacional de Antropología (Ciudad de México, México)</h3>
+    <p><strong>Entrada General:</strong> $100 MXN<br>
+    <strong>Nota:</strong> Entrada gratuita los domingos para público nacional y residentes en México.</p>
+  </div>
+
+  <div class="card">
+    <h3>Museo de Orsay (París, Francia)</h3>
+    <p><strong>Entrada General:</strong> €16,00 (venta online)<br>
+    <strong>Nota:</strong> Gratis para menores de 18 y menores de 26 de la UE/EEE. Gratuito el primer domingo de mes para todos.</p>
+  </div>
+</div>
+
+        <h3>Mapa Interactivo (global)</h3>
+        <div class="map-controls">
+          <label for="museum-select">Buscar museo:</label>
+          <select id="museum-select">
+            <option value="all">— Mostrar todos los museos —</option>
+            <option value="louvre">Museo del Louvre (París)</option>
+            <option value="met">The Met (Nueva York)</option>
+            <option value="britanico">British Museum (Londres)</option>
+            <option value="vaticanos">Museos Vaticanos (Ciudad del Vaticano)</option>
+            <option value="prado">Museo del Prado (Madrid)</option>
+            <option value="hermitage">Hermitage (San Petersburgo)</option>
+            <option value="moma">MoMA (Nueva York)</option>
+            <option value="galeria">National Gallery (Londres)</option>
+            <option value="antropologia">Museo Nacional de Antropología (CDMX)</option>
+            <option value="orsay">Musée d'Orsay (París)</option>
+          </select>
+          <button id="open-google" class="btn small">Abrir en Google Maps</button>
+        </div>
+
+        <div id="map" class="map-wrapper" style="height:420px;"></div>
+
+        <h3>Tours Virtuales</h3>
+        <div class="card-grid">
+          <div class="card">
+          <h3>Museo del Hermitage</h3>
+          <p><strong>Enlace:</strong> <a href="https://www.hermitagemuseum.org/panorama?lng=en" target="_blank">recorrido-virtual</a><br>
+            <strong>Disponible:</strong> Hermitage, Rusia<br>
+            <strong>Características:</strong> Visita 360°</p>
+          </div>
+
+          <div class="card">
+          <h3>Galeria Nacional</h3>
+          <p><strong>Enlace:</strong> <a href="https://artsandculture.google.com/streetview/hgFGlzj1GiNxTg?sv_pid=CAISFjNGOEtFUUZsMjRfMTd6b1p0ZXRmLVE%3D&sv_h=344.1&sv_p=-13.3" target="_blank">recorrido-virtual</a><br>
+            <strong>Disponible:</strong> Galeria Nacional<br>
+            <strong>Características:</strong> Visita 360°</p>
+          </div>
+          
+          <div class="card">
+          <h3>Museo de Orsay</h3>
+          <p><strong>Enlace:</strong> <a href="https://g.co/arts/Dawns7jkDz4cWBBY9" target="_blank">recorrido-virtual</a><br>
+            <strong>Disponible:</strong> Museo de Orsay<br>
+            <strong>Características:</strong> Visita 360°</p>
+          </div>
+
+          <div class="card">
+          <h3>Museo Nacional de Antropología</h3>
+          <p><strong>Enlace:</strong> <a href="https://inah.gob.mx/interactivos/recorridos-virtuales" target="_blank">recorrido-virtual</a><br>
+            <strong>Disponible:</strong>Museo Nacional de Antropología<br>
+            <strong>Características:</strong> Visita 360°</p>
+          </div>
+
+          <div class="card">
+          <h3>Museo del Prado</h3>
+          <p><strong>Enlace:</strong> <a href="https://www.museodelprado.es/actualidad/multimedia/la-coleccion/e97b3d7c-ab15-f91d-0d4d-8a57d57a32f9?visit=true&lang=es&startScene=80" target="_blank">recorrido-virtual</a><br>
+            <strong>Disponible:</strong>Museo del Prado<br>
+            <strong>Características:</strong> Visita 360°</p>
+          </div>
+
+          <div class="card">
+          <h3>Museos de Vaticanos</h3>
+          <p><strong>Enlace:</strong> <a href="https://www.museivaticani.va/content/museivaticani/es/collezioni/musei/cappella-sistina/tour-virtuale.html" target="_blank">recorrido-virtual</a><br>
+            <strong>Disponible:</strong>Museos de Vaticanos<br>
+            <strong>Características:</strong> Visita 360°</p>
+          </div>
+
+          <div class="card">
+          <h3>Museo británico</h3>
+          <p><strong>Enlace:</strong> <a href="https://artsandculture.google.com/partner/the-british-museum" target="_blank">recorrido-virtual</a><br>
+            <strong>Disponible:</strong>MMuseo británico<br>
+            <strong>Características:</strong> Visita 360°</p>
+          </div>
+      </article>
+    </section>
+
+        <section id="blog" class="section">
+      <h2>Blog / Noticias</h2>
+      
+      <article>
+        <h3>Exposiciones Temporales Destacadas 2024</h3>
+        <div class="card-grid">
+
+  <div class="card">
+    <h3>Museo del Louvre (París)</h3>
+    <p><strong>Artista Destacado:</strong> Leonardo da Vinci<br>
+    <strong>Obra 1:</strong> La Gioconda (Mona Lisa)<br>
+    <strong>Obra 2:</strong> La Virgen de las Rocas (Versión del Louvre)</p>
+  </div>
+
+  <div class="card">
+    <h3>Museo del Hermitage (San Petersburgo)</h3>
+    <p><strong>Artista Destacado:</strong> Rembrandt van Rijn<br>
+    <strong>Obra 1:</strong> El regreso del hijo pródigo<br>
+    <strong>Obra 2:</strong> Danaë</p>
+  </div>
+
+  <div class="card">
+    <h3>Museo Metropolitano de Arte (The Met) (Nueva York)</h3>
+    <p><strong>Artista Destacado:</strong> Vincent van Gogh<br>
+    <strong>Obra 1:</strong> Autorretrato con sombrero de paja<br>
+    <strong>Obra 2:</strong> Los cipreses</p>
+  </div>
+
+  <div class="card">
+    <h3>Museo Británico (Londres)</h3>
+    <p><strong>Artista Destacado:</strong> Es de civilizaciones<br>
+    <strong>Obra 1:</strong> Piedra Rosetta<br>
+    <strong>Obra 2:</strong> Los Mármoles de Elgin (o del Partenón)</p>
+  </div>
+
+  <div class="card">
+    <h3>Museos Vaticanos (Ciudad del Vaticano)</h3>
+    <p><strong>Artista Destacado:</strong> Miguel Ángel<br>
+    <strong>Obra 1:</strong> La Creación de Adán (Fresco de la Capilla Sixtina)<br>
+    <strong>Obra 2:</strong> La Piedad (Escultura en la Basílica de San Pedro)</p>
+  </div>
+
+  <div class="card">
+    <h3>Museo del Prado (Madrid)</h3>
+    <p><strong>Artista Destacado:</strong> Diego Velázquez<br>
+    <strong>Obra 1:</strong> Las Meninas<br>
+    <strong>Obra 2:</strong> La Rendición de Breda (Las Lanzas)</p>
+  </div>
+
+  <div class="card">
+    <h3>Museo de Arte Moderno (MoMA) (Nueva York)</h3>
+    <p><strong>Artista Destacado:</strong> Pablo Picasso<br>
+    <strong>Obra 1:</strong> Las señoritas de Aviñón<br>
+    <strong>Obra 2:</strong> Los tres músicos</p>
+  </div>
+
+  <div class="card">
+    <h3>Galería Nacional de Londres</h3>
+    <p><strong>Artista Destacado:</strong> Jan van Eyck<br>
+    <strong>Obra 1:</strong> El Matrimonio Arnolfini<br>
+    <strong>Obra 2:</strong> Retrato de Giovanni Arnolfini y su esposa</p>
+  </div>
+
+  <div class="card">
+    <h3>Museo Nacional de Antropología (Ciudad de México)</h3>
+    <p><strong>Artista Destacado:</strong> Cultura Azteca<br>
+    <strong>Obra 1:</strong> Piedra del Sol (Calendario Azteca)<br>
+    <strong>Obra 2:</strong> Escultura de Coatlicue</p>
+  </div>
+
+  <div class="card">
+    <h3>Museo de Orsay (París)</h3>
+    <p><strong>Artista Destacado:</strong> Vincent van Gogh<br>
+    <strong>Obra 1:</strong> La noche estrellada sobre el Ródano<br>
+    <strong>Obra 2:</strong> La iglesia de Auvers-sur-Oise</p>
+  </div>
+</div>
+</article>
+
+<article>
+  <h3>Anuncios y Eventos</h3>
+    <div class="card-grid">
+
+  <div class="card">
+    <h3>Museo del Louvre (París)</h3>
+    <p><strong>Novedad Principal:</strong> Gran Crisis de Seguridad tras un Robo<br>
+    <strong>Detalles Clave:</strong> El museo ha estado en las noticias mundiales debido a un robo de joyas de la corona francesa ocurrido en octubre de 2025. Esto ha desencadenado una investigación, la detención de varios sospechosos y el anuncio de la instalación de nuevos "dispositivos antiintrusión" y un debate sobre la subestimación de riesgos de seguridad.</p>
+  </div>
+
+  <div class="card">
+    <h3>Museo del Hermitage (San Petersburgo)</h3>
+    <p><strong>Novedad Principal:</strong> Moratoria en Exposiciones Internacionales<br>
+    <strong>Detalles Clave:</strong> El museo anunció una moratoria de un año (iniciada en 2022, pero que sigue vigente) para no realizar exposiciones en Estados Unidos ni Europa, debido a la situación política internacional. Se centra en el retorno seguro de sus obras.</p>
+  </div>
+
+  <div class="card">
+    <h3>Museo Metropolitano de Arte (The Met) (Nueva York)</h3>
+    <p><strong>Novedad Principal:</strong> Temática de la Met Gala 2025<br>
+    <strong>Detalles Clave:</strong> La Met Gala 2025 explorará el "dandismo negro" como forma de expresión y resistencia cultural, inaugurando la exposición de primavera del Instituto del Traje bajo la noción “Slaves to Fashion”.</p>
+  </div>
+
+  <div class="card">
+    <h3>Museo Británico (Londres)</h3>
+    <p><strong>Novedad Principal:</strong> Cambio en la Estrategia de Recaudación<br>
+    <strong>Detalles Clave:</strong> El museo descartó organizar eventos sociales de alto perfil, optando por una gestión más austera y sostenible sin depender de grandes galas para recaudar fondos.</p>
+  </div>
+
+  <div class="card">
+    <h3>Museos Vaticanos (Ciudad del Vaticano)</h3>
+    <p><strong>Novedad Principal:</strong> Eventos Centrales del Jubileo 2025<br>
+    <strong>Detalles Clave:</strong> En el marco del Jubileo 2025, se celebran eventos especiales como el Jubileo de los Artistas y del Mundo de la Cultura, con una histórica visita del Papa Francisco a los estudios de Cinecittà.</p>
+  </div>
+
+  <div class="card">
+    <h3>Museo del Prado (Madrid)</h3>
+    <p><strong>Novedad Principal:</strong> Programación de Exposiciones 2025<br>
+    <strong>Detalles Clave:</strong> El Prado anunció un programa con exposiciones dedicadas a El Greco, Veronés y Mengs, además de “Tan lejos, tan cerca. Guadalupe de México en España”, que refuerza su vínculo con el arte americano.</p>
+  </div>
+
+  <div class="card">
+    <h3>Museo de Arte Moderno (MoMA) (Nueva York)</h3>
+    <p><strong>Novedad Principal:</strong> Cambio en la Dirección y Festival de Cine<br>
+    <strong>Detalles Clave:</strong> Glenn D. Lowry, su histórico director, dejará su cargo en septiembre de 2025. Además, se celebra el Festival “To Save and Project 2025”, centrado en la restauración cinematográfica.</p>
+  </div>
+
+  <div class="card">
+    <h3>Galería Nacional de Londres</h3>
+    <p><strong>Novedad Principal:</strong> Culminación de una Gran Remodelación<br>
+    <strong>Detalles Clave:</strong> La Galería celebra su bicentenario con reformas en el ala Sainsbury y la instalación de una pantalla de ultra alta resolución, buscando convertirse en un museo más accesible y tecnológico.</p>
+  </div>
+
+  <div class="card">
+    <h3>Museo Nacional de Antropología (Ciudad de México)</h3>
+    <p><strong>Novedad Principal:</strong> Premio Princesa de Asturias y Exposiciones<br>
+    <strong>Detalles Clave:</strong> En 2025 el museo fue galardonado con el Premio Princesa de Asturias de la Concordia. Prepara además la Ofrenda de Día de Muertos y la exposición temporal “Tlillancalco. El lugar de la casa negra”.</p>
+  </div>
+
+  <div class="card">
+    <h3>Museo de Orsay (París)</h3>
+    <p><strong>Novedad Principal:</strong> Importantes Reformas (2025–2027)<br>
+    <strong>Detalles Clave:</strong> El Orsay y la Orangerie emprenden un plan de reformas para mejorar el recorrido del visitante, reducir colas y modernizar el vestíbulo, resaltando su pasado como estación ferroviaria.</p>
+  </div>
+</div>
+</article>
+
+<section id="acerca" class="section">
+  <h2>Acerca de</h2>
+  <article>
+    <h3>Quiénes Somos</h3>
+    <p>Soy Diego Rubén Becerril Paredes, estudiante de Ciencias de la Informática en UPIICSA. Este proyecto es un esfuerzo personal educativo para recopilar y presentar información sobre los museos más importantes del mundo.
+        El objetivo es crear un recurso claro y visual que permita a otras personas explorar museos, planificar visitas y conocer detalles culturales relevantes. Todo el contenido se basa en fuentes públicas y sitios oficiales de los museos.
+        Este proyecto es sin fines de lucro y tiene fines exclusivamente educativos.</p>
+  </article>
+  
+  <article>
+    <h3>Contacto</h3>
+    <p>Email: diego.rbecerrilp@gmail.com<br>
+       Teléfono: +52 48194081</p>
+    <div class="social-links">
+      <a href="https://www.instagram.com/becerrilparedes?igsh=MXZzNXBqZ3pxbnV2MQ==" aria-label="Instagram">Instagram</a>
+    </div>
+  </article>
+  </main>
+
+  <footer>
+    <div>Proyecto escolar - Los 10 Museos Más Destacados del Mundo</div>
+    <div class="muted">Información tomada de fuentes públicas y sitios oficiales de los museos.</div>
+  </footer>
+
+  <script src="js\script.js"></script>
+
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDyHkCq6N63-2eTv1ni2eYVqdIWibu40wE&callback=initMap">
+  </script>
+</body>
+</html>
